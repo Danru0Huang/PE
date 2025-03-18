@@ -1,0 +1,11 @@
+prefix=/root/miniconda3/envs/pe_env
+exec_prefix=/root/miniconda3/envs/pe_env
+libdir=/root/miniconda3/envs/pe_env/lib
+includedir=/root/miniconda3/envs/pe_env/include
+
+Name: uuid
+Description: Universally unique id library
+Version: 2.32.1
+Requires:
+Cflags: -I${includedir}/uuid
+Libs: -L${libdir} -luuid

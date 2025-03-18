@@ -1,0 +1,13 @@
+prefix=/root/miniconda3/envs/pe_env
+exec_prefix=/root/miniconda3/envs/pe_env
+libdir=/root/miniconda3/envs/pe_env/lib
+sharedlibdir=/root/miniconda3/envs/pe_env/lib
+includedir=/root/miniconda3/envs/pe_env/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

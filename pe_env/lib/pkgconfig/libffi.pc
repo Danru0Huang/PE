@@ -1,0 +1,11 @@
+prefix=/root/miniconda3/envs/pe_env
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+toolexeclibdir=${libdir}
+includedir=/root/miniconda3/envs/pe_env/include
+
+Name: libffi
+Description: Library supporting Foreign Function Interfaces
+Version: 3.4.4
+Libs: -L${toolexeclibdir} -lffi
+Cflags: -I${includedir}
