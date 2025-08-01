@@ -4,7 +4,7 @@ import json
 from typing import Union
 
 # 配置 Neo4j 驱动
-NEO4J_URI = "bolt://121.40.186.242:7687/"  
+NEO4J_URI = "bolt://localhost:7687/"  
 NEO4J_USER = "neo4j" 
 NEO4J_PASSWORD = "123456"  
 
@@ -82,33 +82,16 @@ def create_relationship(from_label, from_name, to_label, to_name, relation):
             raise
 
 # 格式化值和值含义
-def parse_values_and_meanings(value_str: str, meaning_str: str):
+def parse_values_and_meanings(value_str: str, meaning_str: str) -> tuple[list[list[str]], list[str]]:
     """
-    将值字符串和值含义字符串格式化为分组的值和对应的值含义。
-    
-    参数:
-        value_str: 值字符串，例如 "1,低,A；2,中,B；3,高,C"
-        meaning_str: 值含义字符串，例如 "低；中；高"（可为空）
-    
-    返回:
-        grouped_values: [["1", "低", "A"], ["2", "中", "B"], ["3", "高", "C"]]
-        value_meanings: ["低", "中", "高"] 或空列表（如果 meaning_str 为空）
+    将输入的values和value_meanings按分号分组，每组内的值用逗号分隔
+    例如：values="1,A,有效;0,B,无效" → [[1,A,有效], [0,B,无效]]
+         meanings="有效;无效" → [有效, 无效]
     """
-    value_str = value_str.replace('，', ',')
-    # 解析值
-    grouped_values = []
-    if value_str:
-        groups = value_str.split("；")  # 按分号分组
-        for group in groups:
-            grouped_values.append(group.split(","))  # 每组按逗号分割值
-
-    # 解析值含义
-    value_meanings = meaning_str.split("；") if meaning_str else []
-
-    # 校验解析结果（当 value_meanings 不为空时才进行匹配校验）
-    if value_meanings and len(groups) != len(value_meanings):
-        raise ValueError("值组数量和值含义数量不匹配，无法建立对应关系。")
-
+    # 解析值组：按分号分割组，每组内按逗号分割单个值
+    grouped_values = [group.split(',') for group in value_str.split(';')] if value_str else []
+    # 解析值含义：按分号分割
+    value_meanings = meaning_str.split(';') if meaning_str else []
     return grouped_values, value_meanings
 
 
@@ -232,6 +215,14 @@ def register_value_domain_with_values(value_domain: Union[str, dict], concept_do
     """
     注册值域类，并生成唯一的ID（例如VD001）。
     同时注册值节点并建立值与值域的关系。
+    
+    Args:
+        value_domain: 值域名称或包含title的字典
+        concept_domain: 概念域名称或包含title的字典
+        value_str: 可枚举值的字符串，使用分号分隔不同值组，例如"1,A,有效;0,B,无效"
+    
+    Returns:
+        注册成功的消息，包含值域名称和已注册的值组
     """
     # 格式化值
     grouped_values, _ = parse_values_and_meanings(value_str, "")
@@ -263,6 +254,17 @@ def register_value_domain_with_values(value_domain: Union[str, dict], concept_do
 def register_value_meanings_with_relationship(concept_domain: Union[str, dict], value_str: str, meaning_str: str) -> str:
     """
     注册值含义，并与值建立对应关系。
+    
+    Args:
+        concept_domain: 概念域名称（字符串）或包含"title"键的字典，用于关联值含义的概念域
+        value_str: 可枚举值的字符串，格式为「值组1;值组2」，每组内值用逗号分隔（如 "1,A,有效;0,B,无效"）
+        meaning_str: 对应的值含义字符串，格式为「含义1;含义2」，数量需与值组数量一致（如 "有效;无效"）
+    
+    Returns:
+        注册成功的消息，包含值组、值含义与概念域的关系信息
+        
+    Raises:
+        ValueError: 当概念域无效、值组与含义数量不匹配时抛出
     """
     # 格式化值和值含义
     grouped_values, value_meanings = parse_values_and_meanings(value_str, meaning_str)

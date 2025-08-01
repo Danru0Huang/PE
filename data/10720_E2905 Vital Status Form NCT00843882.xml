@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ODM xmlns="http://www.cdisc.org/ns/odm/v1.3" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" Description="E2905 Vital Status Form NCT00843882 " FileType="Snapshot" Granularity="All" FileOID="NCI.FORMBUILDER.2455662v1.0" CreationDateTime="2015-06-08T13:29:09+01:00" ODMVersion="1.3.1" Originator="University Hospital Muenster, Germany">
+    <Study OID="S.2455662v1.0">
+        <GlobalVariables>
+            <StudyName>10720_E2905 Vital Status Form NCT00843882 </StudyName>
+            <StudyDescription>E2905 Vital Status Form NCT00843882 &#13;
+&#13;
+Lenalidomide With or Without Epoetin Alfa in Treating Patients With Myelodysplastic Syndrome and Anemia&#13;
+&#13;
+Source Form: NCI FormBuilder: https://formbuilder.nci.nih.gov/FormBuilder/formDetailsAction.do?method=getFormDetails&amp;formIdSeq=0EAABFF6-287B-7357-E044-0003BA3F9857</StudyDescription>
+            <ProtocolName>E2905</ProtocolName>
+        </GlobalVariables>
+        <BasicDefinitions/>
+        <MetaDataVersion OID="MD.2455662v1.0" Name="MetaData">
+            <Protocol>
+                <Description>
+                    <TranslatedText xml:lang="en">INSTRUCTIONS:  After patient is off treatment, complete this form for each required follow-up report period (see forms submission schedule). Submit original to the ECOG Coordinating Center. Keep a copy for your files.</TranslatedText>
+                </Description>
+                <StudyEventRef Mandatory="No" StudyEventOID="SE.0000"/>
+            </Protocol>
+            <StudyEventDef OID="SE.0000" Name="E2905 Vital Status Form" Repeating="No" Type="Common">
+                <FormRef Mandatory="No" FormOID="FP.0000"/>
+            </StudyEventDef>
+            <FormDef OID="FP.0000" Name="E2905 Vital Status Form NCT00843882 " Repeating="No">
+                <Description>
+                    <TranslatedText xml:lang="en">INSTRUCTIONS:  After patient is off treatment, complete this form for each required follow-up report period (see forms submission schedule). Submit original to the ECOG Coordinating Center. Keep a copy for your files.</TranslatedText>
+                </Description>
+                <ItemGroupRef ItemGroupOID="2455663" OrderNumber="0" Mandatory="No"/>
+                <ItemGroupRef ItemGroupOID="2455672" OrderNumber="1" Mandatory="No"/>
+                <ItemGroupRef ItemGroupOID="2455712" OrderNumber="2" Mandatory="No"/>
+                <ItemGroupRef ItemGroupOID="2455679" OrderNumber="3" Mandatory="No"/>
+                <ItemGroupRef ItemGroupOID="2455719" OrderNumber="4" Mandatory="No"/>
+                <ItemGroupRef ItemGroupOID="2455715" OrderNumber="5" Mandatory="No"/>
+                <ItemGroupRef ItemGroupOID="2455769" OrderNumber="6" Mandatory="No"/>
+                <ItemGroupRef ItemGroupOID="2455738" OrderNumber="7" Mandatory="No"/>
+                <ItemGroupRef ItemGroupOID="2455781" OrderNumber="8" Mandatory="No"/>
+                <ItemGroupRef ItemGroupOID="2455794" OrderNumber="9" Mandatory="No"/>
+                <ItemGroupRef ItemGroupOID="2455802" OrderNumber="10" Mandatory="No"/>
+            </FormDef>
+            <ItemGroupDef OID="2455663" Name="Header" Repeating="No">
+                <Description>
+                    <TranslatedText xml:lang="en">Header</TranslatedText>
+                </Description>
+                <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.2002462v4.0"/>
+                <ItemRef OrderNumber="2" Mandatory="No" ItemOID="I.2003734v4.0"/>
+                <ItemRef OrderNumber="3" Mandatory="No" ItemOID="I.2005743v3.0"/>
+                <ItemRef OrderNumber="3" Mandatory="No" ItemOID="I.2002093v4.0"/>
+            </ItemGroupDef>
+            <ItemGroupDef OID="2455672" Name="Patient demographics" Repeating="No" Comment="Place ID Label Here">
+                <Description>
+                    <TranslatedText xml:lang="en">Patient demographics</TranslatedText>
+                </Description>
+                <ItemRef OrderNumber="0" Mandatory="No" ItemOID="I.2001039v4.0"/>
+                <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.2002462v4.0"/>
+                <ItemRef OrderNumber="2" Mandatory="No" ItemOID="I.2003734v4.0"/>
+                <ItemRef OrderNumber="3" Mandatory="No" ItemOID="I.829v4.0"/>
+                <ItemRef OrderNumber="4" Mandatory="No" ItemOID="I.2269v4.0"/>
+                <ItemRef OrderNumber="5" Mandatory="No" ItemOID="I.2001040v4.0"/>
+            </ItemGroupDef>
+            <ItemGroupDef OID="2455712" Name="Data amendment" Repeating="No">
+                <Description>
+                    <TranslatedText xml:lang="en">Data amendment</TranslatedText>
+                </Description>
+                <ItemRef OrderNumber="0" Mandatory="No" ItemOID="I.2200613v1.0"/>
+                <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.2200394v1.0"/>
+            </ItemGroupDef>
+            <ItemGroupDef OID="2455679" Name="Off protocol treatment period" Repeating="No">
+                <Description>
+                    <TranslatedText xml:lang="en">Off protocol treatment period</TranslatedText>
+                </Description>
+                <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.2005745v4.0"/>
+            </ItemGroupDef>
+            <ItemGroupDef OID="2455719" Name="Section I - Vital Status" Repeating="No" Comment="Provide the most recent survival status and date.">
+                <Description>
+                    <TranslatedText xml:lang="en">Vital Status</TranslatedText>
+                </Description>
+                <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.5v4.0"/>
+                <ItemRef OrderNumber="2" Mandatory="No" ItemOID="I.6v4.0"/>
+                <ItemRef OrderNumber="3" Mandatory="No" ItemOID="I.25v8.0"/>
+                <ItemRef OrderNumber="4" Mandatory="No" ItemOID="I.2751v5.0"/>
+            </ItemGroupDef>
+            <ItemGroupDef OID="2455715" Name="Section II - Reporting Period" Repeating="No" Comment="NOTE: The remainder of the questions on this form should be answered with respect to the report period dates above. Any known events (other than survival status and date) that occurred outside of these dates should be reported on the">
+                <Description>
+                    <TranslatedText xml:lang="en">Section II - Reporting Period</TranslatedText>
+                </Description>
+                <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.2993v4.0"/>
+                <ItemRef OrderNumber="2" Mandatory="No" ItemOID="I.2992v4.0"/>
+            </ItemGroupDef>
+            <ItemGroupDef OID="2455769" Name="Section III - Notice of New Primary" Repeating="No">
+                <Description>
+                    <TranslatedText xml:lang="en">Notice Of New Primary (including Second Colon Primary)</TranslatedText>
+                </Description>
+                <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.690v5.1"/>
+                <ItemRef OrderNumber="2" Mandatory="No" ItemOID="I.692v4.0"/>
+            </ItemGroupDef>
+            <ItemGroupDef OID="2455738" Name="Section IV - Disease Follow-up Status" Repeating="No" Comment="Skip this section if first recurrence was previously reported">
+                <Description>
+                    <TranslatedText xml:lang="en">Disease Follow-up Status</TranslatedText>
+                </Description>
+                <ItemRef OrderNumber="0" Mandatory="No" ItemOID="I.1731v4.0"/>
+                <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.2190318v1.0"/>
+                <ItemRef OrderNumber="2" Mandatory="No" ItemOID="I.806v4.0"/>
+                <ItemRef OrderNumber="3" Mandatory="No" ItemOID="I.1732v5.0"/>
+                <ItemRef OrderNumber="4" Mandatory="No" ItemOID="I.2190322v1.0"/>
+                <ItemRef OrderNumber="5" Mandatory="No" ItemOID="I.1487v4.0"/>
+                <ItemRef OrderNumber="6" Mandatory="No" ItemOID="I.1114v3.0"/>
+                <ItemRef OrderNumber="7" Mandatory="No" ItemOID="I.2003741v3.0"/>
+                <ItemRef OrderNumber="8" Mandatory="No" ItemOID="I.2184576v1.0"/>
+            </ItemGroupDef>
+            <ItemGroupDef OID="2455781" Name="Section V - Adverse Events" Repeating="No" Comment="Skip this section if first progression was previously reported">
+                <Description>
+                    <TranslatedText xml:lang="en">Adverse Events</TranslatedText>
+                </Description>
+                <ItemRef OrderNumber="2" Mandatory="No" ItemOID="I.2184975v1.0"/>
+            </ItemGroupDef>
+            <ItemGroupDef OID="2455794" Name="Section VI - Non-Protocol Therapy Prior To Progression" Repeating="No" Comment="Skip this section if first recurrence was previously reported">
+                <Description>
+                    <TranslatedText xml:lang="en">Non-protocol Therapy</TranslatedText>
+                </Description>
+                <ItemRef OrderNumber="0" Mandatory="No" ItemOID="I.2001131v4.0"/>
+            </ItemGroupDef>
+            <ItemGroupDef OID="2455802" Name="Footer Module" Repeating="No">
+                <Description>
+                    <TranslatedText xml:lang="en">Comments</TranslatedText>
+                </Description>
+                <ItemRef OrderNumber="0" Mandatory="No" ItemOID="I.58320v5.0"/>
+                <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.58321v3.0"/>
+            </ItemGroupDef>
+            <ItemDef OID="I.2005743v3.0" Name="Generic drug form" DataType="text" Length="100">
+                <Question>
+                    <TranslatedText xml:lang="en">DCI Name</TranslatedText>
+                </Question>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C25191"/>
+                <Alias Context="UMLS CUI-1" Name="C3242750"/>
+                <Alias Context="NCI Thesaurus Property" Name="C19464"/>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C25474"/>
+                <Alias Context="NCI Thesaurus ObjectClass-2" Name="C25452"/>
+            </ItemDef>
+            <ItemDef OID="I.2002093v4.0" Name="Registration Number" DataType="text" Length="20">
+                <Question>
+                    <TranslatedText xml:lang="en">Registration Step</TranslatedText>
+                </Question>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C25337"/>
+                <Alias Context="UMLS CUI-1" Name="C1514821"/>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C25646"/>
+                <Alias Context="UMLS CUI-2" Name="C0237753"/>
+                <Alias Context="NCI Thesaurus Property" Name="C16154"/>
+                <Alias Context="NCI Thesaurus ValueDomain-2" Name="C16154"/>
+            </ItemDef>
+            <ItemDef OID="I.2001039v4.0" Name="Patient Initials" DataType="text" Length="4">
+                <Question>
+                    <TranslatedText xml:lang="en">Patient Initials (Last, First)</TranslatedText>
+                </Question>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C25191"/>
+                <Alias Context="UMLS CUI-1" Name="C2986440"/>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C16960"/>
+                <Alias Context="NCI Thesaurus Property" Name="C25536"/>
+            </ItemDef>
+            <ItemDef OID="I.2002462v4.0" Name="Protocol Number ECOG" DataType="text" Length="35">
+                <Question>
+                    <TranslatedText xml:lang="en">ECOG Protocol Number</TranslatedText>
+                </Question>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C25337"/>
+                <Alias Context="UMLS CUI-1" Name="C3274381"/>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C25320"/>
+                <Alias Context="UMLS CUI-2" Name="C1512162"/>
+                <Alias Context="NCI Thesaurus Property" Name="C25364"/>
+                <Alias Context="NCI Thesaurus Property-2" Name="C25491"/>
+            </ItemDef>
+            <ItemDef OID="I.2003734v4.0" Name="Patient ID ECOG" DataType="text" Length="20">
+                <Question>
+                    <TranslatedText xml:lang="en">ECOG Patient ID</TranslatedText>
+                </Question>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C25337"/>
+                <Alias Context="UMLS CUI-1" Name="C2348585"/>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C16960"/>
+                <Alias Context="UMLS CUI-2" Name="C1512162"/>
+                <Alias Context="NCI Thesaurus Property" Name="C25364"/>
+                <Alias Context="NCI Thesaurus Property-2" Name="C25491"/>
+            </ItemDef>
+            <ItemDef OID="I.829v4.0" Name="Study Number Participating Group" DataType="text" Length="35">
+                <Question>
+                    <TranslatedText xml:lang="en">Participating Group Protocol Number</TranslatedText>
+                </Question>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C25337"/>
+                <Alias Context="UMLS CUI-1" Name="C3274381"/>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C25320"/>
+                <Alias Context="UMLS CUI-2" Name="C2347449"/>
+                <Alias Context="NCI Thesaurus Property" Name="C25608"/>
+                <Alias Context="NCI Thesaurus Property-2" Name="C25364"/>
+            </ItemDef>
+            <ItemDef OID="I.2269v4.0" Name="Trial subject ID Participating Group" DataType="text" Length="20">
+                <Question>
+                    <TranslatedText xml:lang="en">Participating Group Patient ID</TranslatedText>
+                </Question>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C25337"/>
+                <Alias Context="UMLS CUI-1" Name="C2348585"/>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C16960"/>
+                <Alias Context="UMLS CUI-2" Name="C2347449"/>
+                <Alias Context="NCI Thesaurus Property" Name="C25608"/>
+                <Alias Context="NCI Thesaurus Property-2" Name="C25364"/>
+            </ItemDef>
+            <ItemDef OID="I.2001040v4.0" Name="Institution Name" DataType="text" Length="100">
+                <Question>
+                    <TranslatedText xml:lang="en">Institution/Affiliate</TranslatedText>
+                </Question>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C25454"/>
+                <Alias Context="UMLS CUI-1" Name="C1301943"/>
+                <Alias Context="NCI Thesaurus ObjectClass-2" Name="C21541"/>
+                <Alias Context="NCI Thesaurus Property" Name="C25364"/>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C25191"/>
+                <Alias Context="NCI Thesaurus ValueDomain-2" Name="C21541"/>
+            </ItemDef>
+            <ItemDef OID="I.2200613v1.0" Name="Data amended" DataType="text" Length="1">
+                <Question>
+                    <TranslatedText xml:lang="en">Please mark an 'X' if data have been amended. (Please circle amended items in red)</TranslatedText>
+                </Question>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C25704"/>
+                <Alias Context="UMLS CUI-1" Name="C0680532"/>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C25474"/>
+                <Alias Context="NCI Thesaurus Property" Name="C25416"/>
+            </ItemDef>
+            <ItemDef OID="I.2200394v1.0" Name="Data amended date" DataType="date" Length="8">
+                <Question>
+                    <TranslatedText xml:lang="en">Date data amended (MM/DD/YYYY)</TranslatedText>
+                </Question>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C25164"/>
+                <Alias Context="UMLS CUI-1" Name="C0680532"/>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C25474"/>
+                <Alias Context="UMLS CUI-2" Name="C0011008"/>
+                <Alias Context="NCI Thesaurus Property" Name="C25416"/>
+                <Alias Context="NCI Thesaurus ValueDomain-2" Name="C25367"/>
+            </ItemDef>
+            <ItemDef OID="I.2005745v4.0" Name="PersonOff-TreatmentTimePeriodType" DataType="text" Length="75">
+                <Question>
+                    <TranslatedText xml:lang="en">Off Treatment Report Period (since registration)</TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID="CL.1"/>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C25190"/>
+                <Alias Context="UMLS 2011AA ObjectClass" Name="C0027361"/>
+                <Alias Context="NCI Thesaurus Property" Name="C25616"/>
+                <Alias Context="UMLS 2011AA Property" Name="C1948053"/>
+                <Alias Context="NCI Thesaurus Property-2" Name="C25601"/>
+                <Alias Context="UMLS 2011AA Property-2" Name="C1518544"/>
+                <Alias Context="NCI Thesaurus Property-3" Name="C25207"/>
+                <Alias Context="UMLS 2011AA Property-3" Name="C0040223"/>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C25284"/>
+                <Alias Context="UMLS 2011AA ValueDomain" Name="C0332307"/>
+            </ItemDef>
+            <ItemDef OID="I.5v4.0" Name="Patient Status" DataType="text" Length="15">
+                <Question>
+                    <TranslatedText xml:lang="en">Patient's Vital Status</TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID="CL.2"/>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C16960"/>
+                <Alias Context="UMLS CUI-1" Name="C3846084"/>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C18003"/>
+                <Alias Context="NCI Thesaurus ValueDomain-2" Name="C25688"/>
+                <Alias Context="NCI Thesaurus Property" Name="C25717"/>
+            </ItemDef>
+            <ItemDef OID="I.6v4.0" Name="Date last contact" DataType="date" Length="8">
+                <Question>
+                    <TranslatedText xml:lang="en">Date of last contact or death (MM/DD/YYYY)</TranslatedText>
+                </Question>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C16960"/>
+                <Alias Context="UMLS CUI-1" Name="C0805839"/>
+                <Alias Context="NCI Thesaurus Property" Name="C25461"/>
+                <Alias Context="NCI Thesaurus Property-2" Name="C25551"/>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C25164"/>
+                <Alias Context="NCI Thesaurus ValueDomain-2" Name="C25367"/>
+            </ItemDef>
+            <ItemDef OID="I.25v8.0" Name="Primary Cause of Death" DataType="text" Length="50">
+                <Question>
+                    <TranslatedText xml:lang="en">Primary Cause of Death (if applicable)</TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID="CL.3"/>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C25638"/>
+                <Alias Context="UMLS CUI-1" Name="C0007465"/>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C16960"/>
+                <Alias Context="NCI Thesaurus Property" Name="C28554"/>
+                <Alias Context="NCI Thesaurus ValueDomain-2" Name="C25251"/>
+            </ItemDef>
+            <ItemDef OID="I.2751v5.0" Name="Cause of Death, specify" DataType="text" Length="100">
+                <Question>
+                    <TranslatedText xml:lang="en">Describe cause of death</TranslatedText>
+                </Question>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C25685"/>
+                <Alias Context="UMLS CUI-1" Name="C0007465"/>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C16960"/>
+                <Alias Context="UMLS CUI-2" Name="C1521902"/>
+                <Alias Context="NCI Thesaurus Property" Name="C28554"/>
+            </ItemDef>
+            <ItemDef OID="I.2993v4.0" Name="Reporting Period Start Date" DataType="date" Length="8">
+                <Question>
+                    <TranslatedText xml:lang="en">Reporting Period Start Date (MM/DD/YYYY)</TranslatedText>
+                </Question>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C15368"/>
+                <Alias Context="NCI Thesaurus Property" Name="C25616"/>
+                <Alias Context="UMLS CUI-1" Name="C2361257"/>
+                <Alias Context="NCI Thesaurus Property-2" Name="C25651"/>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C25164"/>
+                <Alias Context="NCI Thesaurus ValueDomain-2" Name="C25431"/>
+            </ItemDef>
+            <ItemDef OID="I.2992v4.0" Name="Reporting Period End Date" DataType="date" Length="8">
+                <Question>
+                    <TranslatedText xml:lang="en">Reporting Period End Date (MM/DD/YYYY)</TranslatedText>
+                </Question>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C25164"/>
+                <Alias Context="UMLS CUI-1" Name="C2361259"/>
+                <Alias Context="NCI Thesaurus Property" Name="C25616"/>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C15368"/>
+                <Alias Context="NCI Thesaurus Property-2" Name="C25651"/>
+            </ItemDef>
+            <ItemDef OID="I.690v5.1" Name="New primary cancer" DataType="text" Length="50">
+                <Question>
+                    <TranslatedText xml:lang="en">Has a new primary cancer or myelodysplastic syndrome been diagnosed that has not been previously reported (MDS)</TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID="CL.4"/>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C25180"/>
+                <Alias Context="UMLS CUI-1" Name="C0751623"/>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C25586"/>
+                <Alias Context="NCI Thesaurus ObjectClass-2" Name="C9305"/>
+                <Alias Context="NCI Thesaurus Property" Name="C15220"/>
+            </ItemDef>
+            <ItemDef OID="I.692v4.0" Name="NewCancerSiteText" DataType="text" Length="100">
+                <Question>
+                    <TranslatedText xml:lang="en">Site of New Primary (s)</TranslatedText>
+                </Question>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C25704"/>
+                <Alias Context="UMLS 2011AA ValueDomain" Name="C1527021"/>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C25586"/>
+                <Alias Context="UMLS 2011AA ObjectClass" Name="C0205314"/>
+                <Alias Context="NCI Thesaurus Property" Name="C25341"/>
+                <Alias Context="UMLS 2011AA Property" Name="C0450429"/>
+                <Alias Context="NCI Thesaurus ObjectClass-2" Name="C9305"/>
+                <Alias Context="UMLS 2011AA ObjectClass-2" Name="C0006826"/>
+            </ItemDef>
+            <ItemDef OID="I.1731v4.0" Name="Documented clinical assessment for this cancer" DataType="text" Length="7">
+                <Question>
+                    <TranslatedText xml:lang="en">Has the patient had a documented clinical assessment for this cancer (since submission of the previous follow-up form)</TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID="CL.5"/>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C38148"/>
+                <Alias Context="UMLS CUI-1" Name="C1522577"/>
+                <Alias Context="NCI Thesaurus Property" Name="C16033"/>
+                <Alias Context="UMLS CUI-2" Name="C0006826"/>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C9305"/>
+                <Alias Context="NCI Thesaurus Property-2" Name="C25365"/>
+            </ItemDef>
+            <ItemDef OID="I.2190318v1.0" Name="CancerUnknownFollow-upAssessmentSpecify" DataType="text" Length="200">
+                <Question>
+                    <TranslatedText xml:lang="en">If unknown, please explain</TranslatedText>
+                </Question>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C9305"/>
+                <Alias Context="UMLS 2011AA ObjectClass" Name="C0006826"/>
+                <Alias Context="NCI Thesaurus Property" Name="C20989"/>
+                <Alias Context="UMLS 2011AA Property" Name="C0031809"/>
+                <Alias Context="NCI Thesaurus Property-2" Name="C17998"/>
+                <Alias Context="UMLS 2011AA Property-2" Name="C0439673"/>
+                <Alias Context="NCI Thesaurus Property-3" Name="C16033"/>
+                <Alias Context="UMLS 2011AA Property-3" Name="C1522577"/>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C25685"/>
+                <Alias Context="UMLS 2011AA ValueDomain" Name="C1521902"/>
+            </ItemDef>
+            <ItemDef OID="I.806v4.0" Name="Follow-Up Date" DataType="date" Length="8">
+                <Question>
+                    <TranslatedText xml:lang="en">Date of last clinical assessment (If yes - Submit E2905 Follow-up Disease Evaluation Form - and E2905 Hematology Form)</TranslatedText>
+                </Question>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C9305"/>
+                <Alias Context="UMLS CUI-1" Name="C3694716"/>
+                <Alias Context="NCI Thesaurus Property" Name="C16033"/>
+                <Alias Context="NCI Thesaurus Property-2" Name="C25365"/>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C25164"/>
+                <Alias Context="NCI Thesaurus ValueDomain-2" Name="C25367"/>
+            </ItemDef>
+            <ItemDef OID="I.1732v5.0" Name="DiseaseProgressionInd-3" DataType="text" Length="7">
+                <Question>
+                    <TranslatedText xml:lang="en">Has the patient developed a first progression (or relapse) that has not been previously reported? (Notice of Progression)</TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID="CL.6"/>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C38148"/>
+                <Alias Context="UMLS 2011AA ValueDomain" Name="C1512699"/>
+                <Alias Context="NCI Thesaurus Property" Name="C25331"/>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C2991"/>
+                <Alias Context="UMLS 2011AA ObjectClass" Name="C0012634"/>
+            </ItemDef>
+            <ItemDef OID="I.2190322v1.0" Name="ProgressiveDiseaseUnknownAssessmentSpecify" DataType="text" Length="100">
+                <Question>
+                    <TranslatedText xml:lang="en">If unknown, please explain</TranslatedText>
+                </Question>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C2991"/>
+                <Alias Context="UMLS 2011AA ObjectClass" Name="C0012634"/>
+                <Alias Context="NCI Thesaurus ObjectClass-2" Name="C25254"/>
+                <Alias Context="UMLS 2011AA ObjectClass-2" Name="C0205329"/>
+                <Alias Context="NCI Thesaurus Property" Name="C20989"/>
+                <Alias Context="UMLS 2011AA Property" Name="C0031809"/>
+                <Alias Context="NCI Thesaurus Property-2" Name="C17998"/>
+                <Alias Context="UMLS 2011AA Property-2" Name="C0439673"/>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C25685"/>
+                <Alias Context="UMLS 2011AA ValueDomain" Name="C1521902"/>
+            </ItemDef>
+            <ItemDef OID="I.1487v4.0" Name="DiseaseProgressionDate" DataType="date" Length="8">
+                <Question>
+                    <TranslatedText xml:lang="en">Disease Progression Date (relapse - Submit E2905 Follow-up Disease Evaluation Form - and E2905 Hematology Form)</TranslatedText>
+                </Question>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C25164"/>
+                <Alias Context="UMLS 2011AA ValueDomain" Name="C0011008"/>
+                <Alias Context="NCI Thesaurus ValueDomain-2" Name="C25367"/>
+                <Alias Context="NCI Thesaurus Property" Name="C25331"/>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C2991"/>
+                <Alias Context="UMLS 2011AA ObjectClass" Name="C0012634"/>
+            </ItemDef>
+            <ItemDef OID="I.1114v3.0" Name="Progression Sites" DataType="text" Length="100">
+                <Question>
+                    <TranslatedText xml:lang="en">Sites of Progression</TranslatedText>
+                </Question>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C25704"/>
+                <Alias Context="UMLS CUI-1" Name="C0280457"/>
+                <Alias Context="NCI Thesaurus Property" Name="C25341"/>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C25331"/>
+            </ItemDef>
+            <ItemDef OID="I.2003741v3.0" Name="PhysicianProgressiveDiagnosisInd-3" DataType="text" Length="7">
+                <Question>
+                    <TranslatedText xml:lang="en">Did a physician make a formal diagnosis of progressive disease?</TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID="CL.7"/>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C38148"/>
+                <Alias Context="UMLS 2011AA ValueDomain" Name="C1512699"/>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C25741"/>
+                <Alias Context="UMLS 2011AA ObjectClass" Name="C0031831"/>
+                <Alias Context="NCI Thesaurus Property" Name="C25254"/>
+                <Alias Context="UMLS 2011AA Property" Name="C0205329"/>
+                <Alias Context="NCI Thesaurus Property-2" Name="C15220"/>
+                <Alias Context="UMLS 2011AA Property-2" Name="C0011900"/>
+            </ItemDef>
+            <ItemDef OID="I.2184576v1.0" Name="ProgressionDiagnosisSpecify" DataType="text" Length="100">
+                <Question>
+                    <TranslatedText xml:lang="en">Specify basis of progression (If no or unknown:)</TranslatedText>
+                </Question>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C25685"/>
+                <Alias Context="UMLS 2011AA ValueDomain" Name="C1521902"/>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C25331"/>
+                <Alias Context="NCI Thesaurus Property" Name="C15220"/>
+                <Alias Context="UMLS 2011AA Property" Name="C0011900"/>
+            </ItemDef>
+            <ItemDef OID="I.2184975v1.0" Name="RadiationTherapyOncologyGroupAdverseEventRelapseReportInd-3" DataType="text" Length="7">
+                <Question>
+                    <TranslatedText xml:lang="en">Has the patient experienced any severe long term toxicity that has not been previously reported (prior to diagnosis of progression/relapse)</TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID="CL.8"/>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C19778"/>
+                <Alias Context="UMLS 2011AA ObjectClass" Name="C1514695"/>
+                <Alias Context="NCI Thesaurus ObjectClass-2" Name="C41331"/>
+                <Alias Context="UMLS 2011AA ObjectClass-2" Name="C0877248"/>
+                <Alias Context="NCI Thesaurus Property" Name="C18265"/>
+                <Alias Context="NCI Thesaurus Property-2" Name="C25375"/>
+                <Alias Context="UMLS 2011AA Property" Name="C0684224"/>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C38148"/>
+                <Alias Context="UMLS 2011AA ValueDomain" Name="C1512699"/>
+            </ItemDef>
+            <ItemDef OID="I.2001131v4.0" Name="Non-ProtocolTherapyPriorCancerProgressionAdministrationInd-3" DataType="text" Length="7">
+                <Question>
+                    <TranslatedText xml:lang="en">Has the patient received any non-protocol cancer therapy prior to first progression (not previously reported)</TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID="CL.9"/>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C15368"/>
+                <Alias Context="NCI Thesaurus ObjectClass-2" Name="C25590"/>
+                <Alias Context="UMLS 2011AA ObjectClass" Name="C1518384"/>
+                <Alias Context="NCI Thesaurus Property" Name="C25629"/>
+                <Alias Context="UMLS 2011AA Property" Name="C0332152"/>
+                <Alias Context="NCI Thesaurus Property-2" Name="C19987"/>
+                <Alias Context="UMLS 2011AA Property-2" Name="C0242656"/>
+                <Alias Context="NCI Thesaurus Property-3" Name="C25409"/>
+                <Alias Context="UMLS 2011AA Property-3" Name="C1533734"/>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C38148"/>
+                <Alias Context="UMLS 2011AA ValueDomain" Name="C1512699"/>
+            </ItemDef>
+            <ItemDef OID="I.58320v5.0" Name="Investigator Signature" DataType="text" Length="100">
+                <Question>
+                    <TranslatedText xml:lang="en">Investigator Signature</TranslatedText>
+                </Question>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C25704"/>
+                <Alias Context="UMLS CUI-1" Name="C2346576"/>
+                <Alias Context="NCI Thesaurus Property" Name="C25678"/>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C17089"/>
+            </ItemDef>
+            <ItemDef OID="I.58321v3.0" Name="Investigator Signature Date" DataType="date" Length="8">
+                <Question>
+                    <TranslatedText xml:lang="en">Investigator Signature Date</TranslatedText>
+                </Question>
+                <Alias Context="NCI Thesaurus ValueDomain" Name="C25164"/>
+                <Alias Context="UMLS CUI-1" Name="C2346576"/>
+                <Alias Context="NCI Thesaurus Property" Name="C25678"/>
+                <Alias Context="UMLS CUI-2" Name="C0011008"/>
+                <Alias Context="NCI Thesaurus ValueDomain-2" Name="C25367"/>
+                <Alias Context="NCI Thesaurus ObjectClass" Name="C17089"/>
+            </ItemDef>
+            <CodeList OID="CL.1" Name="CL.1" DataType="text">
+                <CodeListItem CodedValue="3 months post end of treatment">
+                    <Decode>
+                        <TranslatedText xml:lang="en">3 Months Post End Of Treatment</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="6 months post end of treatment">
+                    <Decode>
+                        <TranslatedText xml:lang="en">6 Months Post End Of Treatment</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+            </CodeList>
+            <CodeList OID="CL.2" Name="CL.2" DataType="text">
+                <CodeListItem CodedValue="Alive">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Alive</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="Dead">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Dead</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+            </CodeList>
+            <CodeList OID="CL.3" Name="CL.3" DataType="text">
+                <CodeListItem CodedValue="Due to protocol treatment">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Due To Protocol Treatment</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="Due to this disease">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Due To This Disease</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="Due to other cause">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Due To Other Cause</TranslatedText>
+                    </Decode>
+                </CodeListItem>
+                <CodeListItem CodedValue="Unknown">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Unknown</TranslatedText>
+                    </Decode>
+                    <Alias Context="NCI Thesaurus" Name="C17998"/>
+                    <Alias Context="UMLS 2011AA" Name="C0439673"/>
+                </CodeListItem>
+            </CodeList>
+            <CodeList OID="CL.4" Name="CL.4" DataType="text">
+                <CodeListItem CodedValue="No">
+                    <Decode>
+                        <TranslatedText xml:lang="en">No</TranslatedText>
+                    </Decode>
+                    <Alias Context="NCI Thesaurus" Name="C49487"/>
+                    <Alias Context="UMLS 2011AA" Name="C1298908"/>
+                </CodeListItem>
+                <CodeListItem CodedValue="Yes">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Yes</TranslatedText>
+                    </Decode>
+                    <Alias Context="NCI Thesaurus" Name="C49488"/>
+                    <Alias Context="UMLS 2011AA" Name="C1705108"/>
+                </CodeListItem>
+                <CodeListItem CodedValue="Unknown">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Unknown</TranslatedText>
+                    </Decode>
+                    <Alias Context="NCI Thesaurus" Name="C17998"/>
+                    <Alias Context="UMLS 2011AA" Name="C0439673"/>
+                </CodeListItem>
+            </CodeList>
+            <CodeList OID="CL.5" Name="CL.5" DataType="text">
+                <CodeListItem CodedValue="No">
+                    <Decode>
+                        <TranslatedText xml:lang="en">No</TranslatedText>
+                    </Decode>
+                    <Alias Context="NCI Thesaurus" Name="C49487"/>
+                    <Alias Context="UMLS 2011AA" Name="C1298908"/>
+                </CodeListItem>
+                <CodeListItem CodedValue="Yes">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Yes</TranslatedText>
+                    </Decode>
+                    <Alias Context="NCI Thesaurus" Name="C49488"/>
+                    <Alias Context="UMLS 2011AA" Name="C1705108"/>
+                </CodeListItem>
+                <CodeListItem CodedValue="Unknown">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Unknown</TranslatedText>
+                    </Decode>
+                    <Alias Context="NCI Thesaurus" Name="C17998"/>
+                    <Alias Context="UMLS 2011AA" Name="C0439673"/>
+                </CodeListItem>
+            </CodeList>
+            <CodeList OID="CL.6" Name="CL.6" DataType="text">
+                <CodeListItem CodedValue="No">
+                    <Decode>
+                        <TranslatedText xml:lang="en">No</TranslatedText>
+                    </Decode>
+                    <Alias Context="NCI Thesaurus" Name="C49487"/>
+                    <Alias Context="UMLS 2011AA" Name="C1298908"/>
+                </CodeListItem>
+                <CodeListItem CodedValue="Yes">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Yes</TranslatedText>
+                    </Decode>
+                    <Alias Context="NCI Thesaurus" Name="C49488"/>
+                    <Alias Context="UMLS 2011AA" Name="C1705108"/>
+                </CodeListItem>
+                <CodeListItem CodedValue="Unknown">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Unknown</TranslatedText>
+                    </Decode>
+                    <Alias Context="NCI Thesaurus" Name="C17998"/>
+                    <Alias Context="UMLS 2011AA" Name="C0439673"/>
+                </CodeListItem>
+            </CodeList>
+            <CodeList OID="CL.7" Name="CL.7" DataType="text">
+                <CodeListItem CodedValue="No">
+                    <Decode>
+                        <TranslatedText xml:lang="en">No</TranslatedText>
+                    </Decode>
+                    <Alias Context="NCI Thesaurus" Name="C49487"/>
+                    <Alias Context="UMLS 2011AA" Name="C1298908"/>
+                </CodeListItem>
+                <CodeListItem CodedValue="Yes">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Yes</TranslatedText>
+                    </Decode>
+                    <Alias Context="NCI Thesaurus" Name="C49488"/>
+                    <Alias Context="UMLS 2011AA" Name="C1705108"/>
+                </CodeListItem>
+                <CodeListItem CodedValue="Unknown">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Unknown</TranslatedText>
+                    </Decode>
+                    <Alias Context="NCI Thesaurus" Name="C17998"/>
+                    <Alias Context="UMLS 2011AA" Name="C0439673"/>
+                </CodeListItem>
+            </CodeList>
+            <CodeList OID="CL.8" Name="CL.8" DataType="text">
+                <CodeListItem CodedValue="No">
+                    <Decode>
+                        <TranslatedText xml:lang="en">No</TranslatedText>
+                    </Decode>
+                    <Alias Context="NCI Thesaurus" Name="C49487"/>
+                    <Alias Context="UMLS 2011AA" Name="C1298908"/>
+                </CodeListItem>
+                <CodeListItem CodedValue="Yes">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Yes</TranslatedText>
+                    </Decode>
+                    <Alias Context="NCI Thesaurus" Name="C49488"/>
+                    <Alias Context="UMLS 2011AA" Name="C1705108"/>
+                </CodeListItem>
+                <CodeListItem CodedValue="Unknown">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Unknown</TranslatedText>
+                    </Decode>
+                    <Alias Context="NCI Thesaurus" Name="C17998"/>
+                    <Alias Context="UMLS 2011AA" Name="C0439673"/>
+                </CodeListItem>
+            </CodeList>
+            <CodeList OID="CL.9" Name="CL.9" DataType="text">
+                <CodeListItem CodedValue="No">
+                    <Decode>
+                        <TranslatedText xml:lang="en">No</TranslatedText>
+                    </Decode>
+                    <Alias Context="NCI Thesaurus" Name="C49487"/>
+                    <Alias Context="UMLS 2011AA" Name="C1298908"/>
+                </CodeListItem>
+                <CodeListItem CodedValue="Yes">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Yes</TranslatedText>
+                    </Decode>
+                    <Alias Context="NCI Thesaurus" Name="C49488"/>
+                    <Alias Context="UMLS 2011AA" Name="C1705108"/>
+                </CodeListItem>
+                <CodeListItem CodedValue="Unknown">
+                    <Decode>
+                        <TranslatedText xml:lang="en">Unknown</TranslatedText>
+                    </Decode>
+                    <Alias Context="NCI Thesaurus" Name="C17998"/>
+                    <Alias Context="UMLS 2011AA" Name="C0439673"/>
+                </CodeListItem>
+            </CodeList>
+        </MetaDataVersion>
+    </Study>
+    <AdminData>
+        <User OID="USR.0001">
+            <FirstName>Martin</FirstName>
+            <LastName>Dugas</LastName>
+            <Organization>University of Muenster, Germany</Organization>
+        </User>
+    </AdminData>
+</ODM>

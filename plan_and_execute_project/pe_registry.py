@@ -1,16 +1,20 @@
 # 引入必要的库
 from langchain_experimental.plan_and_execute import PlanAndExecute, load_agent_executor, load_chat_planner
-# from langchain_community.chat_models import ChatOpenAI 
 from langchain_core.prompts import ChatPromptTemplate
 from tools import tools
-from langchain_openai import ChatOpenAI
+from langchain_openai import ChatOpenAI  
 import os
 import pandas as pd
-# 设置 OPENAI_API_KEY 环境变量
-os.environ["OPENAI_API_KEY"] = "sk-0DYXSY24ZoiDfSuf6f7667Cf4e534839828d93A448Ba0556"
-# 设置 OPENAI_BASE_URL 环境变量
-os.environ["OPENAI_BASE_URL"] = "https://xiaoai.plus/v1"
-client = ChatOpenAI()
+
+# 设置DeepSeek API配置
+os.environ["OPENAI_API_KEY"] = "sk-cc34e669d51045899c14e8342f0ab5d9"  
+os.environ["OPENAI_BASE_URL"] = "https://api.deepseek.com/v1"  
+
+llm = ChatOpenAI(
+    model="deepseek-chat",  
+    temperature=0,
+    max_retries=3  
+)
 
 planner_prompt = """
     你是一个计划智能体，你的任务是根据输入的本体类和属性以及值和值含义，按照 MDR 规范的步骤顺序生成六大注册类的计划，并要求为每个属性独立生成注册内容。
@@ -20,7 +24,6 @@ planner_prompt = """
    - **请确保严格按照提供的输入值 {values} 、值含义{value_meanings}注册，不允许更改、缺少或推测新的值。**
    - 生成每一步计划时，包含工具调用的参数示例。
    - **不要返回执行结果**，只返回计划。
-   - **请确保所有注册内容一定全部都是（包括名称和描述）为中文，不允许出现英文。**
 
     输入的本体类：{ontology_class}
     输入的属性：{attribute}
@@ -90,7 +93,7 @@ planner_prompt = """
         values="1，A，有效；0，B，无效")
     6. 注册值含义value_meanings：存在可枚举的值"1，A，有效；0，B，无效"则需要为概念域注册值含义"有效；无效"，使用 `register_value_meanings_with_relationship` 工具，格式为：
     register_value_meanings_with_relationship( 
-        concept_domain="fa",
+        concept_domain="法律状态",
         values="1，A，有效；0，B，无效",
         value_meanings="有效；无效")
     7. 注册数据元data_element，与2个类有关，分别是data_element_concept、value_domain关联：使用 register_data_element_with_relationships 工具，格式为：
@@ -99,9 +102,6 @@ planner_prompt = """
         data_element_concept="专利法律状态", 
         value_domain="法律状态")
 """
-
-# 使用 ChatOpenAI 模型并生成 Plan
-llm = ChatOpenAI(model="gpt-4", temperature=0)
 # 使用 load_chat_planner 生成 Planner 实例
 planner = load_chat_planner(llm, planner_prompt)
 
@@ -129,8 +129,8 @@ executor_prompt = """
         object_class="{object_class}", 
         property="{property}", 
         concept_domain="{concept_domain}")`
-5. 如果任务是生成value_domain，与1个类有关，concept_domain关联，使用 `register_value_domain_with_relationship` 工具：
-   格式：`register_value_domain_with_relationship(
+5. 如果任务是生成value_domain，与1个类有关，concept_domain关联，使用 `register_value_domain_with_values` 工具：
+   格式：`register_value_domain_with_values(
         value_domain="{value_domain}", 
         concept_domain="{concept_domain}"),
         values="{values}")`
@@ -164,7 +164,7 @@ executor_prompt = """
     使用register_value_domain_with_values(
         value_domain="法律状态", 
         concept_domain="法律状态",
-        values="1，A，有效；0，B，无效")
+        values="1,A,有效;0,B,无效")
     输出：已成功注册值域 '法律状态'，并与概念域建立关系，其中可枚举值单独注册并与值域建立关系，
     注册values: Value - 1 创建关系: (ValueDomain:法律状态) -[:INCLUDE]-> (Value:1)
     注册values: Value - A 创建关系: (ValueDomain:法律状态) -[:INCLUDE]-> (Value:A)
@@ -173,7 +173,7 @@ executor_prompt = """
     6. 注册值含义value_meanings：存在可枚举的值"1，A，有效；0，B，无效"则需要为概念域注册值含义"有效；无效"，
     使用register_value_meanings_with_relationship( 
         concept_domain="法律状态",
-        values="1，A，有效；0，B，无效",
+        values="1,A,有效;0,B,无效",
         value_meanings="有效；无效")
     输出：已成功注册值含义 '有效；无效'，并与概念域法律状态建立关系，其中值含义单独注册并与可枚举值建立关系，
     注册value_meanings: 有效 创建关系: (values:1) -[:HAS_MEANING]-> (value_meanings: 有效)
@@ -195,7 +195,7 @@ executor = load_agent_executor(llm, tools,verbose=True)
 agent = PlanAndExecute(planner=planner, executor=executor, verbose=True)
 
 # 读取Excel文件
-df = pd.read_excel("/root/data/ontology_data.xlsx")
+df = pd.read_excel("../data/output.xlsx")
 
 def process_data(df):
     """

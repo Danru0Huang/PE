@@ -1,0 +1,930 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ODM xmlns="http://www.cdisc.org/ns/odm/v1.3" ODMVersion="1.3.1">
+  <MetaDataVersion OID="MD.combined" Name="CombinedMetaData" Description="Combined data from multiple files with deduplication and all Aliases removed">
+    <ItemGroupDef OID="2455337" Name="Agent Name:  Epoetin-alpha (Arm B Only)" Repeating="No">
+      <Description>
+        <TranslatedText xml:lang="en">Agent Name:  Epoetin-alpha (Arm B Only)</TranslatedText>
+      </Description>
+      <ItemRef OrderNumber="0" Mandatory="No" ItemOID="I.10v4.0" />
+      <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.2007058v1.0" />
+      <ItemRef OrderNumber="2" Mandatory="No" ItemOID="I.3290v3.0" />
+      <ItemRef OrderNumber="3" Mandatory="No" ItemOID="I.3291v4.0" />
+      <ItemRef OrderNumber="10" Mandatory="No" ItemOID="I.687v3.0" />
+      <ItemRef OrderNumber="11" Mandatory="No" ItemOID="I.17v3.0" />
+      <ItemRef OrderNumber="12" Mandatory="No" ItemOID="I.2188247v1.0" />
+    </ItemGroupDef>
+    <ItemGroupDef OID="2454912" Name="Comments" Repeating="No">
+      <Description>
+        <TranslatedText xml:lang="en">Comments</TranslatedText>
+      </Description>
+      <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.58320v5.0" />
+      <ItemRef OrderNumber="2" Mandatory="No" ItemOID="I.58321v3.0" />
+      <ItemRef OrderNumber="3" Mandatory="No" ItemOID="I.1" />
+    </ItemGroupDef>
+    <ItemGroupDef OID="2455712" Name="Data amendment" Repeating="No">
+      <Description>
+        <TranslatedText xml:lang="en">Data amendment</TranslatedText>
+      </Description>
+      <ItemRef OrderNumber="0" Mandatory="No" ItemOID="I.2200613v1.0" />
+      <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.2200394v1.0" />
+      <ItemRef OrderNumber="2" Mandatory="No" ItemOID="I.2200394v1.0" />
+      <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.2200613v1.0" />
+    </ItemGroupDef>
+    <ItemGroupDef OID="2455802" Name="Footer Module" Repeating="No">
+      <Description>
+        <TranslatedText xml:lang="en">Footer Module</TranslatedText>
+      </Description>
+      <ItemRef OrderNumber="0" Mandatory="No" ItemOID="I.58320v5.0" />
+      <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.58321v3.0" />
+    </ItemGroupDef>
+    <ItemGroupDef OID="2455663" Name="Header" Repeating="No">
+      <Description>
+        <TranslatedText xml:lang="en">Header</TranslatedText>
+      </Description>
+      <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.2002462v4.0" />
+      <ItemRef OrderNumber="2" Mandatory="No" ItemOID="I.2003734v4.0" />
+      <ItemRef OrderNumber="3" Mandatory="No" ItemOID="I.2005743v3.0" />
+      <ItemRef OrderNumber="3" Mandatory="No" ItemOID="I.2002093v4.0" />
+      <ItemRef OrderNumber="4" Mandatory="No" ItemOID="I.2002093v4.0" />
+      <ItemRef OrderNumber="5" Mandatory="No" ItemOID="I.2006627v4.0" />
+      <ItemRef OrderNumber="6" Mandatory="No" ItemOID="I.2001039v4.0" />
+      <ItemRef OrderNumber="7" Mandatory="No" ItemOID="I.829v4.0" />
+      <ItemRef OrderNumber="8" Mandatory="No" ItemOID="I.2269v4.0" />
+      <ItemRef OrderNumber="9" Mandatory="No" ItemOID="I.2001040v4.0" />
+    </ItemGroupDef>
+    <ItemGroupDef OID="2459023" Name="Myeloid Growth Factor Use" Repeating="No">
+      <Description>
+        <TranslatedText xml:lang="en">Myeloid Growth Factor Use</TranslatedText>
+      </Description>
+      <ItemRef OrderNumber="0" Mandatory="No" ItemOID="I.2459030v1.0" />
+    </ItemGroupDef>
+    <ItemGroupDef OID="2455273" Name="Non-Protocol Therapy" Repeating="No">
+      <Description>
+        <TranslatedText xml:lang="en">Non-Protocol Therapy</TranslatedText>
+      </Description>
+      <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.62660v3.0" />
+    </ItemGroupDef>
+    <ItemGroupDef OID="2774025" Name="ON TREATMENT" Repeating="No">
+      <Description>
+        <TranslatedText xml:lang="en">ON TREATMENT</TranslatedText>
+      </Description>
+      <ItemRef OrderNumber="0" Mandatory="No" ItemOID="I.2005744v5.0" />
+      <ItemRef OrderNumber="0" Mandatory="No" ItemOID="I.2005744v5.0" />
+      <ItemRef OrderNumber="3" Mandatory="No" ItemOID="I.2002179v3.0" />
+      <ItemRef OrderNumber="3" Mandatory="No" ItemOID="I.2002179v3.0" />
+    </ItemGroupDef>
+    <ItemGroupDef OID="2455679" Name="Off protocol treatment period" Repeating="No">
+      <Description>
+        <TranslatedText xml:lang="en">Off protocol treatment period</TranslatedText>
+      </Description>
+      <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.2005745v4.0" />
+    </ItemGroupDef>
+    <ItemGroupDef OID="2454935" Name="Patient Information" Repeating="No">
+      <Description>
+        <TranslatedText xml:lang="en">Patient Information</TranslatedText>
+      </Description>
+      <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.88v5.1" />
+      <ItemRef OrderNumber="2" Mandatory="No" ItemOID="I.651v4.0" />
+      <ItemRef OrderNumber="3" Mandatory="No" ItemOID="I.649v4.0" />
+      <ItemRef OrderNumber="4" Mandatory="No" ItemOID="I.2971918v1.0" />
+      <ItemRef OrderNumber="5" Mandatory="No" ItemOID="I.2971925v1.0" />
+      <ItemRef OrderNumber="6" Mandatory="No" ItemOID="I.2971930v1.0" />
+      <ItemRef OrderNumber="7" Mandatory="No" ItemOID="I.2429851v1.0" />
+      <ItemRef OrderNumber="8" Mandatory="No" ItemOID="I.2770972v1.0" />
+      <ItemRef OrderNumber="9" Mandatory="No" ItemOID="I.2770979v1.0" />
+    </ItemGroupDef>
+    <ItemGroupDef OID="2455672" Name="Patient demographics" Repeating="No">
+      <Description>
+        <TranslatedText xml:lang="en">Patient demographics</TranslatedText>
+      </Description>
+      <ItemRef OrderNumber="0" Mandatory="No" ItemOID="I.2001039v4.0" />
+      <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.2002462v4.0" />
+      <ItemRef OrderNumber="2" Mandatory="No" ItemOID="I.2003734v4.0" />
+      <ItemRef OrderNumber="3" Mandatory="No" ItemOID="I.829v4.0" />
+      <ItemRef OrderNumber="4" Mandatory="No" ItemOID="I.2269v4.0" />
+      <ItemRef OrderNumber="5" Mandatory="No" ItemOID="I.2001040v4.0" />
+    </ItemGroupDef>
+    <ItemGroupDef OID="2454906" Name="Prior Treatment" Repeating="No">
+      <Description>
+        <TranslatedText xml:lang="en">Prior Treatment</TranslatedText>
+      </Description>
+      <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.2426174v1.0" />
+      <ItemRef OrderNumber="2" Mandatory="No" ItemOID="I.2201016v1.0" />
+      <ItemRef OrderNumber="3" Mandatory="No" ItemOID="I.792v3.0" />
+      <ItemRef OrderNumber="4" Mandatory="No" ItemOID="I.2974143v1.0" />
+      <ItemRef OrderNumber="5" Mandatory="No" ItemOID="I.2771007v1.0" />
+      <ItemRef OrderNumber="6" Mandatory="No" ItemOID="I.2974156v1.0" />
+      <ItemRef OrderNumber="7" Mandatory="No" ItemOID="I.2974194v1.0" />
+      <ItemRef OrderNumber="8" Mandatory="No" ItemOID="I.2771965v1.0" />
+      <ItemRef OrderNumber="9" Mandatory="No" ItemOID="I.2771034v1.0" />
+      <ItemRef OrderNumber="10" Mandatory="No" ItemOID="I.2771744v1.0" />
+      <ItemRef OrderNumber="11" Mandatory="No" ItemOID="I.2771743v1.0" />
+      <ItemRef OrderNumber="12" Mandatory="No" ItemOID="I.2771742v1.0" />
+      <ItemRef OrderNumber="13" Mandatory="No" ItemOID="I.2771749v1.0" />
+      <ItemRef OrderNumber="14" Mandatory="No" ItemOID="I.2771803v1.0" />
+      <ItemRef OrderNumber="15" Mandatory="No" ItemOID="I.2974187v1.0" />
+      <ItemRef OrderNumber="16" Mandatory="No" ItemOID="I.2771805v1.0" />
+      <ItemRef OrderNumber="17" Mandatory="No" ItemOID="I.2771802v1.0" />
+      <ItemRef OrderNumber="18" Mandatory="No" ItemOID="I.2459851v1.0" />
+      <ItemRef OrderNumber="19" Mandatory="No" ItemOID="I.2771819v1.0" />
+      <ItemRef OrderNumber="20" Mandatory="No" ItemOID="I.2771822v1.0" />
+      <ItemRef OrderNumber="21" Mandatory="No" ItemOID="I.2459828v1.0" />
+      <ItemRef OrderNumber="22" Mandatory="No" ItemOID="I.2459849v1.0" />
+      <ItemRef OrderNumber="23" Mandatory="No" ItemOID="I.2459853v1.0" />
+      <ItemRef OrderNumber="24" Mandatory="No" ItemOID="I.2459857v1.0" />
+    </ItemGroupDef>
+    <ItemGroupDef OID="2458619" Name="Reporting period" Repeating="No">
+      <Description>
+        <TranslatedText xml:lang="en">Reporting period</TranslatedText>
+      </Description>
+      <ItemRef OrderNumber="0" Mandatory="No" ItemOID="I.2993v4.0" />
+      <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.2992v4.0" />
+    </ItemGroupDef>
+    <ItemGroupDef OID="2455719" Name="Section I - Vital Status" Repeating="No">
+      <Description>
+        <TranslatedText xml:lang="en">Section I - Vital Status</TranslatedText>
+      </Description>
+      <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.5v4.0" />
+      <ItemRef OrderNumber="2" Mandatory="No" ItemOID="I.6v4.0" />
+      <ItemRef OrderNumber="3" Mandatory="No" ItemOID="I.25v8.0" />
+      <ItemRef OrderNumber="4" Mandatory="No" ItemOID="I.2751v5.0" />
+    </ItemGroupDef>
+    <ItemGroupDef OID="2455715" Name="Section II - Reporting Period" Repeating="No">
+      <Description>
+        <TranslatedText xml:lang="en">Section II - Reporting Period</TranslatedText>
+      </Description>
+      <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.2993v4.0" />
+      <ItemRef OrderNumber="2" Mandatory="No" ItemOID="I.2992v4.0" />
+    </ItemGroupDef>
+    <ItemGroupDef OID="2455769" Name="Section III - Notice of New Primary" Repeating="No">
+      <Description>
+        <TranslatedText xml:lang="en">Section III - Notice of New Primary</TranslatedText>
+      </Description>
+      <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.690v5.1" />
+      <ItemRef OrderNumber="2" Mandatory="No" ItemOID="I.692v4.0" />
+    </ItemGroupDef>
+    <ItemGroupDef OID="2455738" Name="Section IV - Disease Follow-up Status" Repeating="No">
+      <Description>
+        <TranslatedText xml:lang="en">Section IV - Disease Follow-up Status</TranslatedText>
+      </Description>
+      <ItemRef OrderNumber="0" Mandatory="No" ItemOID="I.1731v4.0" />
+      <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.2190318v1.0" />
+      <ItemRef OrderNumber="2" Mandatory="No" ItemOID="I.806v4.0" />
+      <ItemRef OrderNumber="3" Mandatory="No" ItemOID="I.1732v5.0" />
+      <ItemRef OrderNumber="4" Mandatory="No" ItemOID="I.2190322v1.0" />
+      <ItemRef OrderNumber="5" Mandatory="No" ItemOID="I.1487v4.0" />
+      <ItemRef OrderNumber="6" Mandatory="No" ItemOID="I.1114v3.0" />
+      <ItemRef OrderNumber="7" Mandatory="No" ItemOID="I.2003741v3.0" />
+      <ItemRef OrderNumber="8" Mandatory="No" ItemOID="I.2184576v1.0" />
+    </ItemGroupDef>
+    <ItemGroupDef OID="2455781" Name="Section V - Adverse Events" Repeating="No">
+      <Description>
+        <TranslatedText xml:lang="en">Section V - Adverse Events</TranslatedText>
+      </Description>
+      <ItemRef OrderNumber="2" Mandatory="No" ItemOID="I.2184975v1.0" />
+    </ItemGroupDef>
+    <ItemGroupDef OID="2455794" Name="Section VI - Non-Protocol Therapy Prior To Progression" Repeating="No">
+      <Description>
+        <TranslatedText xml:lang="en">Section VI - Non-Protocol Therapy Prior To Progression</TranslatedText>
+      </Description>
+      <ItemRef OrderNumber="0" Mandatory="No" ItemOID="I.2001131v4.0" />
+    </ItemGroupDef>
+    <ItemGroupDef OID="2459007" Name="Steroid Use" Repeating="No">
+      <Description>
+        <TranslatedText xml:lang="en">Steroid Use</TranslatedText>
+      </Description>
+      <ItemRef OrderNumber="0" Mandatory="No" ItemOID="I.2459014v1.0" />
+      <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.2459010v1.0" />
+      <ItemRef OrderNumber="2" Mandatory="No" ItemOID="I.2774153v1.0" />
+    </ItemGroupDef>
+    <ItemGroupDef OID="2455311" Name="Therapy Administered" Repeating="No">
+      <Description>
+        <TranslatedText xml:lang="en">Therapy Administered</TranslatedText>
+      </Description>
+      <ItemRef OrderNumber="0" Mandatory="No" ItemOID="I.10v4.0" />
+      <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.2007058v1.0" />
+      <ItemRef OrderNumber="2" Mandatory="No" ItemOID="I.12v3.0" />
+      <ItemRef OrderNumber="3" Mandatory="No" ItemOID="I.14v4.0" />
+      <ItemRef OrderNumber="4" Mandatory="No" ItemOID="I.2774134v1.0" />
+      <ItemRef OrderNumber="5" Mandatory="No" ItemOID="I.2458729v1.0" />
+      <ItemRef OrderNumber="6" Mandatory="No" ItemOID="I.2458731v1.0" />
+      <ItemRef OrderNumber="7" Mandatory="No" ItemOID="I.2458736v1.0" />
+      <ItemRef OrderNumber="8" Mandatory="No" ItemOID="I.2458745v1.0" />
+      <ItemRef OrderNumber="9" Mandatory="No" ItemOID="I.2458742v1.0" />
+      <ItemRef OrderNumber="10" Mandatory="No" ItemOID="I.687v3.0" />
+      <ItemRef OrderNumber="11" Mandatory="No" ItemOID="I.17v3.0" />
+      <ItemRef OrderNumber="12" Mandatory="No" ItemOID="I.2188247v1.0" />
+    </ItemGroupDef>
+    <ItemGroupDef OID="2459040" Name="Thrombopoietic Agent Use" Repeating="No">
+      <Description>
+        <TranslatedText xml:lang="en">Thrombopoietic Agent Use</TranslatedText>
+      </Description>
+      <ItemRef OrderNumber="0" Mandatory="No" ItemOID="I.2003892v3.0" />
+      <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.2772112v3.0" />
+    </ItemGroupDef>
+    <ItemGroupDef OID="2455188" Name="Vital Status" Repeating="No">
+      <Description>
+        <TranslatedText xml:lang="en">Vital Status</TranslatedText>
+      </Description>
+      <ItemRef OrderNumber="1" Mandatory="No" ItemOID="I.5v4.0" />
+      <ItemRef OrderNumber="2" Mandatory="No" ItemOID="I.6v4.0" />
+      <ItemRef OrderNumber="3" Mandatory="No" ItemOID="I.25v8.0" />
+      <ItemRef OrderNumber="4" Mandatory="No" ItemOID="I.2751v5.0" />
+    </ItemGroupDef>
+    <ItemDef OID="I.2003892v3.0" Name="AdverseEventDeepVeinThrombosisPresentInd-2" DataType="boolean" Length="3">
+      <Question>
+        <TranslatedText xml:lang="en">Did the patient have a deep vein thrombosis (DVT) this report period? (Report grade and attribution under thrombosis/embolism on E2905 Adverse Event Form.)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2772112v3.0" Name="AdverseEventPulmonaryEmbolismPresentInd-2" DataType="boolean" Length="3">
+      <Question>
+        <TranslatedText xml:lang="en">Did the patient have a pulmonary embolism this report period? (Report grade and attribution under thrombosis/embolism on E2905 Adverse Event Form.)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.10v4.0" Name="Agent" DataType="text" Length="100">
+      <Question>
+        <TranslatedText xml:lang="en">Agent Name (Arm B Only)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.687v3.0" Name="Agent Total Dose" DataType="float" Length="10">
+      <Question>
+        <TranslatedText xml:lang="en">Agent Total Dose (this report period)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2007058v1.0" Name="Agent administered during reporting period" DataType="boolean" Length="3">
+      <Question>
+        <TranslatedText xml:lang="en">Was the agent administered during this reporting period? (Darbepoetin-alpha)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2774134v1.0" Name="AgentDailyQuantityPrescriptionDose" DataType="float" Length="4">
+      <Question>
+        <TranslatedText xml:lang="en">Daily dose prescribed</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2190318v1.0" Name="CancerUnknownFollow-upAssessmentSpecify" DataType="text" Length="200">
+      <Question>
+        <TranslatedText xml:lang="en">If unknown, please explain</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2751v5.0" Name="Cause of Death, specify" DataType="text" Length="100">
+      <Question>
+        <TranslatedText xml:lang="en">Describe cause of death</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2002179v3.0" Name="Chemotherapy cycle" DataType="text" Length="100">
+      <Question>
+        <TranslatedText xml:lang="en">Specify Cycle</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2201016v1.0" Name="ChemotherapyAdministeredInd-2" DataType="boolean" Length="3">
+      <Question>
+        <TranslatedText xml:lang="en">Chemotherapy</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2771965v1.0" Name="ChemotherapyAzacitidinePriorAdministrationInd-3" DataType="text" Length="7">
+      <Question>
+        <TranslatedText xml:lang="en">Azacitidine</TranslatedText>
+      </Question>
+      <CodeListRef CodeListOID="CL.13" />
+    </ItemDef>
+    <ItemDef OID="I.2771034v1.0" Name="ChemotherapyDecitabinePriorAdministrationInd-3" DataType="boolean" Length="7">
+      <Question>
+        <TranslatedText xml:lang="en">Decitabine</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2974194v1.0" Name="ChemotherapyPriorCytarabineAdministeredInd-2" DataType="boolean" Length="3">
+      <Question>
+        <TranslatedText xml:lang="en">Cytarabine</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2771742v1.0" Name="ChemotherapyThalidomidePriorAdministrationInd-3" DataType="boolean" Length="7">
+      <Question>
+        <TranslatedText xml:lang="en">Thalidomide</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2006627v4.0" Name="Clinical Trial Period" DataType="text" Length="150">
+      <Question>
+        <TranslatedText xml:lang="en">Reporting Period</TranslatedText>
+      </Question>
+      <CodeListRef CodeListOID="CL.1" />
+    </ItemDef>
+    <ItemDef OID="I.1" Name="Comments" DataType="text" Length="">
+      <Question>
+        <TranslatedText xml:lang="en">Comments</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.14v4.0" Name="Concomitant Medication End Date" DataType="date" Length="8">
+      <Question>
+        <TranslatedText xml:lang="en">Agent End Date</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.12v3.0" Name="Concomitant Medication Start Date" DataType="date" Length="8">
+      <Question>
+        <TranslatedText xml:lang="en">Agent Start Date</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2005744v5.0" Name="Cycle number" DataType="text" Length="100">
+      <Question>
+        <TranslatedText xml:lang="en">On Treatment Report Period (Step 2 - Choose one x)</TranslatedText>
+      </Question>
+      <CodeListRef CodeListOID="CL.2" />
+    </ItemDef>
+    <ItemDef OID="I.2200613v1.0" Name="Data amended" DataType="text" Length="1">
+      <Question>
+        <TranslatedText xml:lang="en">Please mark an 'X' if data have been amended. (Please circle amended items in red)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2200394v1.0" Name="Data amended date" DataType="date" Length="8">
+      <Question>
+        <TranslatedText xml:lang="en">Date data amended (MM/DD/YYYY)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.3291v4.0" Name="Date Last Dose" DataType="date" Length="8">
+      <Question>
+        <TranslatedText xml:lang="en">Date of Last dose for this reporting period (MM/DD/YYYY)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.6v4.0" Name="Date last contact" DataType="date" Length="8">
+      <Question>
+        <TranslatedText xml:lang="en">Date of last contact or death (MM/DD/YYYY)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.1487v4.0" Name="DiseaseProgressionDate" DataType="date" Length="8">
+      <Question>
+        <TranslatedText xml:lang="en">Disease Progression Date (relapse - Submit E2905 Follow-up Disease Evaluation Form - and E2905 Hematology Form)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.1732v5.0" Name="DiseaseProgressionInd-3" DataType="text" Length="7">
+      <Question>
+        <TranslatedText xml:lang="en">Has the patient developed a first progression (or relapse) that has not been previously reported? (Notice of Progression)</TranslatedText>
+      </Question>
+      <CodeListRef CodeListOID="CL.6" />
+    </ItemDef>
+    <ItemDef OID="I.1731v4.0" Name="Documented clinical assessment for this cancer" DataType="text" Length="7">
+      <Question>
+        <TranslatedText xml:lang="en">Has the patient had a documented clinical assessment for this cancer (since submission of the previous follow-up form)</TranslatedText>
+      </Question>
+      <CodeListRef CodeListOID="CL.5" />
+    </ItemDef>
+    <ItemDef OID="I.17v3.0" Name="Dose Modification" DataType="text" Length="50">
+      <Question>
+        <TranslatedText xml:lang="en">Were there any dose modifications or additions/omissions to protocol treatment (Paxlitaxel)</TranslatedText>
+      </Question>
+      <CodeListRef CodeListOID="CL.9" />
+    </ItemDef>
+    <ItemDef OID="I.2188247v1.0" Name="Dose Modification Status" DataType="text" Length="100">
+      <Question>
+        <TranslatedText xml:lang="en">Dose modification (If yes:)</TranslatedText>
+      </Question>
+      <CodeListRef CodeListOID="CL.10" />
+    </ItemDef>
+    <ItemDef OID="I.88v5.1" Name="ECOG Performance Status" DataType="text" Length="1">
+      <Question>
+        <TranslatedText xml:lang="en">ECOG Performance Status</TranslatedText>
+      </Question>
+      <CodeListRef CodeListOID="CL.2" />
+    </ItemDef>
+    <ItemDef OID="I.2459851v1.0" Name="ErythropoietinAgentLastAdministeredDate" DataType="date" Length="8">
+      <Question>
+        <TranslatedText xml:lang="en">Date (If yes, - EPO last administered)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.806v4.0" Name="Follow-Up Date" DataType="date" Length="8">
+      <Question>
+        <TranslatedText xml:lang="en">Date of last clinical assessment (If yes - Submit E2905 Follow-up Disease Evaluation Form - and E2905 Hematology Form)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2005743v3.0" Name="Generic drug form" DataType="text" Length="100">
+      <Question>
+        <TranslatedText xml:lang="en">DCI Name</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2771743v1.0" Name="ImmunotherapyAnti-ThymocyteGlobulinPriorAdministrationInd-3" DataType="boolean" Length="7">
+      <Question>
+        <TranslatedText xml:lang="en">ATG (anti-thymocyte globulin)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2771744v1.0" Name="ImmunotherapyCyclosporinePriorAdministrationInd-3" DataType="boolean" Length="7">
+      <Question>
+        <TranslatedText xml:lang="en">Cyclosporin</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2771802v1.0" Name="ImmunotherapyEpoetinAlfaPriorAdministrationInd-2" DataType="boolean" Length="3">
+      <Question>
+        <TranslatedText xml:lang="en">Prior Epoetin Alpha</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2771819v1.0" Name="ImmunotherapyEpoetinAlfaPriorFailureInd-2" DataType="boolean" Length="3">
+      <Question>
+        <TranslatedText xml:lang="en">Did patient have prior EPO failure</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2771822v1.0" Name="ImmunotherapyEpoetinAlfaPriorLowResponseIND-2" DataType="boolean" Length="3">
+      <Question>
+        <TranslatedText xml:lang="en">Low EPO response profile (If no,)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2974187v1.0" Name="ImmunotherapyErythropoietinPriorAdministeredFirstDate" DataType="date" Length="8">
+      <Question>
+        <TranslatedText xml:lang="en">Date (DA first administered)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2771803v1.0" Name="ImmunotherapyErythropoietinPriorAdministeredInd-2" DataType="boolean" Length="3">
+      <Question>
+        <TranslatedText xml:lang="en">Prior Darpoietin Alpha (DA)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2771805v1.0" Name="ImmunotherapyErythropoietinPriorAdministeredMostRecentDate" DataType="date" Length="8">
+      <Question>
+        <TranslatedText xml:lang="en">Date (DA last administered)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2001040v4.0" Name="Institution Name" DataType="text" Length="100">
+      <Question>
+        <TranslatedText xml:lang="en">Institution/Affiliate</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.58320v5.0" Name="Investigator Signature" DataType="text" Length="100">
+      <Question>
+        <TranslatedText xml:lang="en">Investigator Signature</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.58321v3.0" Name="Investigator Signature Date" DataType="date" Length="8">
+      <Question>
+        <TranslatedText xml:lang="en">Investigator Signature Date</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2971918v1.0" Name="IronStainingMethodLaboratoryProcedureInd-2" DataType="boolean" Length="3">
+      <Question>
+        <TranslatedText xml:lang="en">Is bone marrow iron stain available for patient</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2974143v1.0" Name="LeukocyteGrowthFactorTherapyAdministeredInd-2" DataType="boolean" Length="3">
+      <Question>
+        <TranslatedText xml:lang="en">Leukocyte Growth Factor</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2974156v1.0" Name="MyelodysplasticSyndromeSecondaryDiseaseorDisorderTreatmentAssessmentInd-2" DataType="boolean" Length="3">
+      <Question>
+        <TranslatedText xml:lang="en">Was this disease MDS secondary due to treatment</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2459030v1.0" Name="MyeloidGrowthFactorAdministeredIndicator" DataType="text" Length="">
+      <Question>
+        <TranslatedText xml:lang="en">Were myeloid growth factors given (this report period)</TranslatedText>
+      </Question>
+      <CodeListRef CodeListOID="CL.13" />
+    </ItemDef>
+    <ItemDef OID="I.690v5.1" Name="New primary cancer" DataType="text" Length="50">
+      <Question>
+        <TranslatedText xml:lang="en">Has a new primary cancer or myelodysplastic syndrome been diagnosed that has not been previously reported (MDS)</TranslatedText>
+      </Question>
+      <CodeListRef CodeListOID="CL.4" />
+    </ItemDef>
+    <ItemDef OID="I.692v4.0" Name="NewCancerSiteText" DataType="text" Length="100">
+      <Question>
+        <TranslatedText xml:lang="en">Site of New Primary (s)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2001131v4.0" Name="Non-ProtocolTherapyPriorCancerProgressionAdministrationInd-3" DataType="text" Length="7">
+      <Question>
+        <TranslatedText xml:lang="en">Has the patient received any non-protocol cancer therapy prior to first progression (not previously reported)</TranslatedText>
+      </Question>
+      <CodeListRef CodeListOID="CL.9" />
+    </ItemDef>
+    <ItemDef OID="I.62660v3.0" Name="Non-protocol therapy" DataType="boolean" Length="7">
+      <Question>
+        <TranslatedText xml:lang="en">Was any non-protocol therapy given during protocol treatment (not previously reported)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2459857v1.0" Name="OtherErythropoietinAgentAdministeredEndDate" DataType="date" Length="8">
+      <Question>
+        <TranslatedText xml:lang="en">Date agent ended (erythropoietic growth factor)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2459853v1.0" Name="OtherErythropoietinAgentAdministeredInd-2" DataType="boolean" Length="3">
+      <Question>
+        <TranslatedText xml:lang="en">Other prior erythropoietic growth factor (other than rhu-EPO and Darbepoetin Alfa)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.649v4.0" Name="Patient Height" DataType="float" Length="6">
+      <Question>
+        <TranslatedText xml:lang="en">Height</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2003734v4.0" Name="Patient ID ECOG" DataType="text" Length="20">
+      <Question>
+        <TranslatedText xml:lang="en">ECOG Patient ID</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2001039v4.0" Name="Patient Initials" DataType="text" Length="4">
+      <Question>
+        <TranslatedText xml:lang="en">Patient Initials (Last, First)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.5v4.0" Name="Patient Status" DataType="text" Length="15">
+      <Question>
+        <TranslatedText xml:lang="en">Patient's Vital Status</TranslatedText>
+      </Question>
+      <CodeListRef CodeListOID="CL.2" />
+    </ItemDef>
+    <ItemDef OID="I.651v4.0" Name="Patient Weight" DataType="float" Length="">
+      <Question>
+        <TranslatedText xml:lang="en">Weight</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2005745v4.0" Name="PersonOff-TreatmentTimePeriodType" DataType="text" Length="75">
+      <Question>
+        <TranslatedText xml:lang="en">Off Treatment Report Period (since registration)</TranslatedText>
+      </Question>
+      <CodeListRef CodeListOID="CL.1" />
+    </ItemDef>
+    <ItemDef OID="I.2429851v1.0" Name="PersonThromboembolismPersonalMedicalHistoryInd-3" DataType="boolean" Length="7">
+      <Question>
+        <TranslatedText xml:lang="en">Does the patient have a history of thromboembolic events</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2770972v1.0" Name="PersonThromboembolismPersonalMedicalHistoryType" DataType="text" Length="25">
+      <Question>
+        <TranslatedText xml:lang="en">Does the patient have any history of the following (If yes,)</TranslatedText>
+      </Question>
+      <CodeListRef CodeListOID="CL.5" />
+    </ItemDef>
+    <ItemDef OID="I.2770979v1.0" Name="PersonThromboembolismPriorThreeYearPersonalMedicalHistoryInd-3" DataType="boolean" Length="7">
+      <Question>
+        <TranslatedText xml:lang="en">Did it occur in the last 3 years (If yes,)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2003741v3.0" Name="PhysicianProgressiveDiagnosisInd-3" DataType="text" Length="7">
+      <Question>
+        <TranslatedText xml:lang="en">Did a physician make a formal diagnosis of progressive disease?</TranslatedText>
+      </Question>
+      <CodeListRef CodeListOID="CL.7" />
+    </ItemDef>
+    <ItemDef OID="I.2458729v1.0" Name="PillsInitialDistributionDate" DataType="date" Length="8">
+      <Question>
+        <TranslatedText xml:lang="en">Date pills initially dispensed (If yes: - MM/DD/YYYY)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2458742v1.0" Name="PillsLostCount" DataType="float" Length="2">
+      <Question>
+        <TranslatedText xml:lang="en">Number of pills lost but not taken</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2458745v1.0" Name="PillsQuantityCount" DataType="float" Length="2">
+      <Question>
+        <TranslatedText xml:lang="en">Pill count - Number of pills remaining in the vial(s) before dispensing new pills</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2458736v1.0" Name="PillsQuantityDate" DataType="date" Length="8">
+      <Question>
+        <TranslatedText xml:lang="en">Date of pill count (MM/DD/YYYY)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2458731v1.0" Name="PillsTotalInitialDistributionCount" DataType="float" Length="2">
+      <Question>
+        <TranslatedText xml:lang="en">Total number of pills patient took home on initial dispensing date</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.25v8.0" Name="Primary Cause of Death" DataType="text" Length="50">
+      <Question>
+        <TranslatedText xml:lang="en">Primary Cause of Death (if applicable)</TranslatedText>
+      </Question>
+      <CodeListRef CodeListOID="CL.3" />
+    </ItemDef>
+    <ItemDef OID="I.792v3.0" Name="PriorImmunotherapyAdministeredInd-3" DataType="boolean" Length="7">
+      <Question>
+        <TranslatedText xml:lang="en">Immunotherapy</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.1114v3.0" Name="Progression Sites" DataType="text" Length="100">
+      <Question>
+        <TranslatedText xml:lang="en">Sites of Progression</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2184576v1.0" Name="ProgressionDiagnosisSpecify" DataType="text" Length="100">
+      <Question>
+        <TranslatedText xml:lang="en">Specify basis of progression (If no or unknown:)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2190322v1.0" Name="ProgressiveDiseaseUnknownAssessmentSpecify" DataType="text" Length="100">
+      <Question>
+        <TranslatedText xml:lang="en">If unknown, please explain</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2002462v4.0" Name="Protocol Number ECOG" DataType="text" Length="35">
+      <Question>
+        <TranslatedText xml:lang="en">ECOG Protocol Number</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2426174v1.0" Name="RadiationTherapyAdministeredInd-2" DataType="boolean" Length="3">
+      <Question>
+        <TranslatedText xml:lang="en">Radiotherapy</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2184975v1.0" Name="RadiationTherapyOncologyGroupAdverseEventRelapseReportInd-3" DataType="text" Length="7">
+      <Question>
+        <TranslatedText xml:lang="en">Has the patient experienced any severe long term toxicity that has not been previously reported (prior to diagnosis of progression/relapse)</TranslatedText>
+      </Question>
+      <CodeListRef CodeListOID="CL.8" />
+    </ItemDef>
+    <ItemDef OID="I.2002093v4.0" Name="Registration Number" DataType="text" Length="20">
+      <Question>
+        <TranslatedText xml:lang="en">Registration Step</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2992v4.0" Name="Reporting Period End Date" DataType="date" Length="8">
+      <Question>
+        <TranslatedText xml:lang="en">Reporting Period End Date (MM/DD/YYYY)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2993v4.0" Name="Reporting Period Start Date" DataType="date" Length="8">
+      <Question>
+        <TranslatedText xml:lang="en">Reporting Period Start Date (MM/DD/YYYY)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2459828v1.0" Name="SerumErythropoietinLevelAmount" DataType="text" Length="">
+      <Question>
+        <TranslatedText xml:lang="en">Serum EPO Level (at study entry)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2459849v1.0" Name="SerumErythropoietinLevelDate" DataType="date" Length="8">
+      <Question>
+        <TranslatedText xml:lang="en">Date (EPO level done)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2971930v1.0" Name="SerumFerritinLaboratoryProcedureOutcomeValue" DataType="text" Length="5">
+      <Question>
+        <TranslatedText xml:lang="en">Serum ferritin</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2459014v1.0" Name="SteroidTherapyAdministeredIndicator" DataType="text" Length="">
+      <Question>
+        <TranslatedText xml:lang="en">Were steroids given (this report period)</TranslatedText>
+      </Question>
+      <CodeListRef CodeListOID="CL.11" />
+    </ItemDef>
+    <ItemDef OID="I.2459010v1.0" Name="SteroidTherapyAdministeredReason" DataType="text" Length="35">
+      <Question>
+        <TranslatedText xml:lang="en">Reason steroids given</TranslatedText>
+      </Question>
+      <CodeListRef CodeListOID="CL.12" />
+    </ItemDef>
+    <ItemDef OID="I.2774153v1.0" Name="SteroidTherapyAdministeredSpecify" DataType="text" Length="100">
+      <Question>
+        <TranslatedText xml:lang="en">Other,specify</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.829v4.0" Name="Study Number Participating Group" DataType="text" Length="35">
+      <Question>
+        <TranslatedText xml:lang="en">Participating Group Protocol Number</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2771007v1.0" Name="TherapeuticProcedurePriorMalignantNeoplasmAdministrationYearDate" DataType="date" Length="4">
+      <Question>
+        <TranslatedText xml:lang="en">Year last given (If yes,)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2771749v1.0" Name="TherapeuticProcedurePriorMyelodysplasticSyndromeAdministrationYearDate" DataType="date" Length="4">
+      <Question>
+        <TranslatedText xml:lang="en">Year last given (If yes,)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2971925v1.0" Name="TransferrinSaturationPercentageValue" DataType="float" Length="4">
+      <Question>
+        <TranslatedText xml:lang="en">Transferrin saturation</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.3290v3.0" Name="Treatment Start Date" DataType="date" Length="8">
+      <Question>
+        <TranslatedText xml:lang="en">Date of First dose for this reporting period (MM/DD/YYYY)</TranslatedText>
+      </Question>
+    </ItemDef>
+    <ItemDef OID="I.2269v4.0" Name="Trial subject ID Participating Group" DataType="text" Length="20">
+      <Question>
+        <TranslatedText xml:lang="en">Participating Group Patient ID</TranslatedText>
+      </Question>
+    </ItemDef>
+    <CodeList OID="CL.1" Name="CL.1" DataType="text">
+      <CodeListItem CodedValue="3 months post end of treatment">
+        <Decode>
+          <TranslatedText xml:lang="en">3 Months Post End Of Treatment</TranslatedText>
+        </Decode>
+      </CodeListItem>
+      <CodeListItem CodedValue="6 months post end of treatment">
+        <Decode>
+          <TranslatedText xml:lang="en">6 Months Post End Of Treatment</TranslatedText>
+        </Decode>
+      </CodeListItem>
+    </CodeList>
+    <CodeList OID="CL.10" Name="CL.10" DataType="text">
+      <CodeListItem CodedValue="Dose delayed">
+        <Decode>
+          <TranslatedText xml:lang="en">Dose Delayed</TranslatedText>
+        </Decode>
+      </CodeListItem>
+      <CodeListItem CodedValue="Dose held">
+        <Decode>
+          <TranslatedText xml:lang="en">Dose Held</TranslatedText>
+        </Decode>
+      </CodeListItem>
+      <CodeListItem CodedValue="Dose reduced">
+        <Decode>
+          <TranslatedText xml:lang="en">Dose Reduced</TranslatedText>
+        </Decode>
+      </CodeListItem>
+      <CodeListItem CodedValue="Dose delayed and reduced">
+        <Decode>
+          <TranslatedText xml:lang="en">Dose Delayed And Reduced</TranslatedText>
+        </Decode>
+      </CodeListItem>
+      <CodeListItem CodedValue="Drug discontinued">
+        <Decode>
+          <TranslatedText xml:lang="en">Drug Discontinued</TranslatedText>
+        </Decode>
+      </CodeListItem>
+    </CodeList>
+    <CodeList OID="CL.11" Name="CL.11" DataType="text">
+      <CodeListItem CodedValue="No">
+        <Decode>
+          <TranslatedText xml:lang="en">No</TranslatedText>
+        </Decode>
+      </CodeListItem>
+      <CodeListItem CodedValue="Yes, steroids given, but not continuing use">
+        <Decode>
+          <TranslatedText xml:lang="en">Yes, Steroids Given, But Not Continuing Use</TranslatedText>
+        </Decode>
+      </CodeListItem>
+      <CodeListItem CodedValue="Yes, steroids given, continuing use">
+        <Decode>
+          <TranslatedText xml:lang="en">Yes, Steroids Given, Continuing Use</TranslatedText>
+        </Decode>
+      </CodeListItem>
+    </CodeList>
+    <CodeList OID="CL.12" Name="CL.12" DataType="text">
+      <CodeListItem CodedValue="Prophylaxis for transfusion reactions">
+        <Decode>
+          <TranslatedText xml:lang="en">Prophylaxis For Transfusion Reactions</TranslatedText>
+        </Decode>
+      </CodeListItem>
+      <CodeListItem CodedValue="Other">
+        <Decode>
+          <TranslatedText xml:lang="en">Other</TranslatedText>
+        </Decode>
+      </CodeListItem>
+    </CodeList>
+    <CodeList OID="CL.13" Name="CL.13" DataType="text">
+      <CodeListItem CodedValue="No">
+        <Decode>
+          <TranslatedText xml:lang="en">No</TranslatedText>
+        </Decode>
+      </CodeListItem>
+      <CodeListItem CodedValue="Yes, myeloid growth factors given, but not continuing use">
+        <Decode>
+          <TranslatedText xml:lang="en">Yes, Myeloid Growth Factors Given, But Not Continuing Use</TranslatedText>
+        </Decode>
+      </CodeListItem>
+      <CodeListItem CodedValue="Yes, myeloid growth factors given, continuing use">
+        <Decode>
+          <TranslatedText xml:lang="en">Yes, Myeloid Growth Factors Given, Continuing Use</TranslatedText>
+        </Decode>
+      </CodeListItem>
+    </CodeList>
+    <CodeList OID="CL.2" Name="CL.2" DataType="text">
+      <CodeListItem CodedValue="Alive">
+        <Decode>
+          <TranslatedText xml:lang="en">Alive</TranslatedText>
+        </Decode>
+      </CodeListItem>
+      <CodeListItem CodedValue="Dead">
+        <Decode>
+          <TranslatedText xml:lang="en">Dead</TranslatedText>
+        </Decode>
+      </CodeListItem>
+    </CodeList>
+    <CodeList OID="CL.3" Name="CL.3" DataType="text">
+      <CodeListItem CodedValue="Due to protocol treatment">
+        <Decode>
+          <TranslatedText xml:lang="en">Due To Protocol Treatment</TranslatedText>
+        </Decode>
+      </CodeListItem>
+      <CodeListItem CodedValue="Due to this disease">
+        <Decode>
+          <TranslatedText xml:lang="en">Due To This Disease</TranslatedText>
+        </Decode>
+      </CodeListItem>
+      <CodeListItem CodedValue="Due to other cause">
+        <Decode>
+          <TranslatedText xml:lang="en">Due To Other Cause</TranslatedText>
+        </Decode>
+      </CodeListItem>
+      <CodeListItem CodedValue="Unknown">
+        <Decode>
+          <TranslatedText xml:lang="en">Unknown</TranslatedText>
+        </Decode>
+      </CodeListItem>
+    </CodeList>
+    <CodeList OID="CL.4" Name="CL.4" DataType="text">
+      <CodeListItem CodedValue="No">
+        <Decode>
+          <TranslatedText xml:lang="en">No</TranslatedText>
+        </Decode>
+      </CodeListItem>
+      <CodeListItem CodedValue="Yes">
+        <Decode>
+          <TranslatedText xml:lang="en">Yes</TranslatedText>
+        </Decode>
+      </CodeListItem>
+      <CodeListItem CodedValue="Unknown">
+        <Decode>
+          <TranslatedText xml:lang="en">Unknown</TranslatedText>
+        </Decode>
+      </CodeListItem>
+    </CodeList>
+    <CodeList OID="CL.5" Name="CL.5" DataType="text">
+      <CodeListItem CodedValue="No">
+        <Decode>
+          <TranslatedText xml:lang="en">No</TranslatedText>
+        </Decode>
+      </CodeListItem>
+      <CodeListItem CodedValue="Yes">
+        <Decode>
+          <TranslatedText xml:lang="en">Yes</TranslatedText>
+        </Decode>
+      </CodeListItem>
+      <CodeListItem CodedValue="Unknown">
+        <Decode>
+          <TranslatedText xml:lang="en">Unknown</TranslatedText>
+        </Decode>
+      </CodeListItem>
+    </CodeList>
+    <CodeList OID="CL.6" Name="CL.6" DataType="text">
+      <CodeListItem CodedValue="No">
+        <Decode>
+          <TranslatedText xml:lang="en">No</TranslatedText>
+        </Decode>
+      </CodeListItem>
+      <CodeListItem CodedValue="Yes">
+        <Decode>
+          <TranslatedText xml:lang="en">Yes</TranslatedText>
+        </Decode>
+      </CodeListItem>
+      <CodeListItem CodedValue="Unknown">
+        <Decode>
+          <TranslatedText xml:lang="en">Unknown</TranslatedText>
+        </Decode>
+      </CodeListItem>
+    </CodeList>
+    <CodeList OID="CL.7" Name="CL.7" DataType="text">
+      <CodeListItem CodedValue="No">
+        <Decode>
+          <TranslatedText xml:lang="en">No</TranslatedText>
+        </Decode>
+      </CodeListItem>
+      <CodeListItem CodedValue="Yes">
+        <Decode>
+          <TranslatedText xml:lang="en">Yes</TranslatedText>
+        </Decode>
+      </CodeListItem>
+      <CodeListItem CodedValue="Unknown">
+        <Decode>
+          <TranslatedText xml:lang="en">Unknown</TranslatedText>
+        </Decode>
+      </CodeListItem>
+    </CodeList>
+    <CodeList OID="CL.8" Name="CL.8" DataType="text">
+      <CodeListItem CodedValue="No">
+        <Decode>
+          <TranslatedText xml:lang="en">No</TranslatedText>
+        </Decode>
+      </CodeListItem>
+      <CodeListItem CodedValue="Yes">
+        <Decode>
+          <TranslatedText xml:lang="en">Yes</TranslatedText>
+        </Decode>
+      </CodeListItem>
+      <CodeListItem CodedValue="Unknown">
+        <Decode>
+          <TranslatedText xml:lang="en">Unknown</TranslatedText>
+        </Decode>
+      </CodeListItem>
+    </CodeList>
+    <CodeList OID="CL.9" Name="CL.9" DataType="text">
+      <CodeListItem CodedValue="No">
+        <Decode>
+          <TranslatedText xml:lang="en">No</TranslatedText>
+        </Decode>
+      </CodeListItem>
+      <CodeListItem CodedValue="Yes">
+        <Decode>
+          <TranslatedText xml:lang="en">Yes</TranslatedText>
+        </Decode>
+      </CodeListItem>
+      <CodeListItem CodedValue="Unknown">
+        <Decode>
+          <TranslatedText xml:lang="en">Unknown</TranslatedText>
+        </Decode>
+      </CodeListItem>
+    </CodeList>
+  </MetaDataVersion>
+</ODM>
